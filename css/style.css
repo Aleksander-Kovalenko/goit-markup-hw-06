@@ -42,6 +42,11 @@ body {
   font-size: var(--primary-font-size);
   letter-spacing: var(--primary-letter-spacing);
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .container {
   margin-left: auto;
@@ -265,9 +270,6 @@ body {
 }
 
 /* TEAM WORK */
-.work-item img {
-  display: block;
-}
 .work.subtitle {
   padding-top: 27px;
   padding-bottom: 27px;
@@ -356,15 +358,12 @@ body {
   align-items: center;
 
   border: 1px solid #afb1b8;
-  box-sizing: border-box;
   border-radius: 4px;
 }
 .customers-item {
   flex: 1;
 }
-.company-link {
-  padding: 20px 60px;
-}
+
 .customers-item:not(:last-child) {
   margin-right: 30px;
 }

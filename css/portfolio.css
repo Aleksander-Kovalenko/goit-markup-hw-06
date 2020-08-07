@@ -32,6 +32,11 @@ body {
   letter-spacing: var(--primary-letter-spacing);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .flexbox {
   display: flex;
   flex-wrap: wrap;
@@ -129,6 +134,9 @@ body {
 }
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
+}
+.header-page {
+  border-bottom: 1px solid #ececec;
 }
 
 .header-page .link {
