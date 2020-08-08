@@ -160,6 +160,18 @@ img {
   color: var(--accent--text-color);
 }
 
+/* .item .current::after {
+  display: flex;
+  content: '';
+  margin-top: 32px;
+
+  width: 48px;
+  height: 4px;
+
+  background-color: currentColor;
+  border-radius: 2px;
+} */
+
 .header-page .link:hover,
 .header-page .link:focus {
   color: var(--accent--text-color);
