@@ -270,7 +270,17 @@ img {
 }
 
 /* TEAM WORK */
+.work-item {
+  position: relative;
+  flex: 1;
+}
+
 .work.subtitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
   padding-top: 27px;
   padding-bottom: 27px;
   margin-top: 0px;
@@ -284,9 +294,7 @@ img {
   text-transform: uppercase;
   text-align: center;
 }
-.work-item {
-  flex: 1;
-}
+
 .work-item:not(:last-child) {
   margin-right: 30px;
 }
