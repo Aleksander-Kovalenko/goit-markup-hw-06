@@ -285,6 +285,9 @@ img {
   transform: translate(-50%, -50%);
   width: 100%; */
 }
+.work-item {
+  cursor: pointer;
+}
 
 .work-item:hover .action-link::before,
 .work-item:hover .describe-content {
