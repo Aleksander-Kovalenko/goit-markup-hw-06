@@ -55,9 +55,10 @@ img {
   padding-right: 15px;
   width: 1200px;
 }
-/* MODAL WINDOW */
 
+/* MODAL WINDOW */
 .backdrop.is-hidden {
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
