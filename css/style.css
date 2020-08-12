@@ -506,7 +506,18 @@ img {
 .customers-list {
   justify-content: center;
 }
+
 .customers-item {
+  flex: 1;
+}
+
+.customers-item:not(:last-child) {
+  margin-right: 30px;
+}
+.customers-item:nth-child(6n) {
+  margin-right: 0;
+}
+.company-link {
   display: flex;
 
   width: 170px;
@@ -518,19 +529,10 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.customers-item {
-  flex: 1;
-}
-
-.customers-item:not(:last-child) {
-  margin-right: 30px;
-}
-.customers-item:nth-child(6n) {
-  margin-right: 0;
-}
-
+.company-link:hover,
 .company-icon:hover .icon {
   --color2: var(--accent--text-color);
+  border-color: var(--button-bg-color);
 }
 
 /* FOOTER PAGE */
