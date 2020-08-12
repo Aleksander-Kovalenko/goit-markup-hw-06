@@ -149,6 +149,21 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.site-nav .item {
+  position: relative;
+}
+.item .current::after {
+  position: absolute;
+  content: '';
+  right: 0;
+  bottom: 0;
+
+  min-width: 80px;
+  height: 4px;
+
+  background-color: currentColor;
+  border-radius: 2px;
+}
 
 .header-page .current {
   color: var(--accent--text-color);
@@ -222,24 +237,58 @@ img {
 .work-item {
   float: 1;
   margin-bottom: 30px;
+
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 
 .action-link {
   position: relative;
 }
-.describe-content {
+.action-link::before {
+  content: '';
   position: absolute;
+
+  width: 100%;
+  height: 100%;
+
   top: 0;
   right: 0;
 
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+}
+
+.describe-content {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 0;
+  left: 0;
   margin: 0;
-  width: 100%;
-  height: 100%;
+  padding: 30px 30px;
+
   font-size: 18px;
   letter-spacing: 0.03em;
   line-height: 1.56;
+
   color: #ffffff;
-  background-color: rgba(33, 150, 243, 0.9);
+
+  opacity: 0;
+
+  pointer-events: none;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; */
+}
+
+.work-item:hover .action-link::before,
+.work-item:hover .describe-content {
+  opacity: 1;
 }
 .work-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),

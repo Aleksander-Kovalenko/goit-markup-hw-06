@@ -55,6 +55,60 @@ img {
   padding-right: 15px;
   width: 1200px;
 }
+/* MODAL WINDOW */
+
+.backdrop .is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  background-color: rgba(229, 229, 229, 0.8);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 528px;
+  min-height: 581px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.btn-close-modal {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  padding: 6px 6px;
+  margin-top: 10px;
+  margin-right: 10px;
+
+  width: 30px;
+  height: 30px;
+
+  background: #ffffff;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* .hero .button:active .backdrop {
+  opacity: 1;
+  pointer-events: unset;
+} */
+
+/* HIDDEN CONTENT ELEMENT */
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -99,6 +153,7 @@ img {
 .button:hover .icon {
   --color1: var(--accent--text-color);
 }
+
 /* LIST OF LIMITS */
 .list {
   margin-top: 0px;
@@ -117,6 +172,9 @@ img {
 }
 
 /* HEADER PROPERTY */
+.header-page {
+  border-bottom: 1px solid #ececec;
+}
 /* logo */
 .title {
   margin-top: 0px;
@@ -137,13 +195,6 @@ img {
   display: flex;
   align-items: center;
 }
-.site-nav {
-  display: flex;
-  margin-left: 85px;
-}
-.site-nav .item:not(:last-child) {
-  margin-right: 50px;
-}
 
 .header-page .link {
   display: block;
@@ -156,21 +207,34 @@ img {
   letter-spacing: 0.02em;
 }
 
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+}
+
+.site-nav .item {
+  position: relative;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-page .current {
   color: var(--accent--text-color);
 }
 
-/* .item .current::after {
-  display: flex;
+.item .current::after {
+  position: absolute;
   content: '';
-  margin-top: 32px;
+  right: 0;
+  bottom: 0;
 
-  width: 48px;
+  min-width: 48px;
   height: 4px;
 
   background-color: currentColor;
   border-radius: 2px;
-} */
+}
 
 .header-page .link:hover,
 .header-page .link:focus {
