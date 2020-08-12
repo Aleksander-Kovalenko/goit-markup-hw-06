@@ -72,7 +72,7 @@
             Эффективные решения<br />
             для вашего бизнеса
           </h2>
-          <button class="button" data-open-model>
+          <button class="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -531,9 +531,9 @@
       </section>
 
       <!-- MODAL WINDOW -->
-      <div class="backdrop is-hidden" data-backdrop>
+      <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button class="btn-close-modal" data-close-model>
+          <button class="btn-close-modal" data-modal-close>
             <svg width="11" height="11">
               <use href="./images/sprite.svg#icon-close"></use>
             </svg>
@@ -659,25 +659,6 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      const refs = {
-        openModalBtn: document.querySelector('[data-open-model]'),
-        closeModalBtn: document.querySelector('[data-close-model]'),
-        backdrop: document.querySelector('[data-backdrop]'),
-      };
-      refs.openModalBtn.addEventListener('click', toggleModal);
-      refs.closeModalBtn.addEventListener('click', toggleModal);
-
-      refs.backdrop.addEventListener('click', logBackdropClick);
-
-      function toggleModal() {
-        refs.backdrop.classList.toggle('is-hidden');
-      }
-
-      function logBackdropClick() {
-        console.log('Это клик в бекдроп');
-      }
-    </script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
