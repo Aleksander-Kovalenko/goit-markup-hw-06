@@ -108,6 +108,9 @@ img {
 }
 
 /* HEADER PROPERTY */
+.header-page {
+  border-bottom: 1px solid #ececec;
+}
 /* logo */
 .title {
   margin-top: 0px;
@@ -128,15 +131,14 @@ img {
   display: flex;
   align-items: center;
 }
+
 .site-nav {
   display: flex;
   margin-left: 85px;
+  height: 100%;
 }
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
-}
-.header-page {
-  border-bottom: 1px solid #ececec;
 }
 
 .header-page .link {
