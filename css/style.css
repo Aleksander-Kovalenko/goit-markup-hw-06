@@ -126,8 +126,10 @@ img {
 
 .input-inform {
   margin-right: 40px;
+  margin-bottom: 20px;
   margin-left: 40px;
 }
+
 .enter-window {
   width: 462px;
   height: 40px;
@@ -135,6 +137,10 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+.client-information:hover .enter-window {
+  border: 1px solid var(--button-bg-color);
 }
 
 .client-information .modal-thumb {
@@ -155,6 +161,14 @@ img {
 .client-information :not(:first-child) {
   display: block;
   margin-bottom: 10px;
+}
+
+.modal-footer {
+  text-align: center;
+}
+
+.modal-footer button {
+  margin: 30px 163px 40px 163px;
 }
 
 /* HIDDEN CONTENT ELEMENT */
