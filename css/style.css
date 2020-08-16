@@ -502,6 +502,15 @@ img {
 }
 
 .social-item {
+  display: block;
+  border-radius: 50%;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.item-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -509,20 +518,20 @@ img {
   width: 44px;
   height: 44px;
 
-  fill: var(--icon-passive-color);
+  border-radius: 50%;
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  border-radius: 50%;
-}
-.social-item:hover,
-.social-item:focus {
-  fill: #ffffff;
-  background-color: var(--icon-bg-color);
+  fill: var(--icon-passive-color);
 }
 
-.social-item:not(:last-child) {
-  margin-right: 10px;
+.social-item:hover,
+.social-item:focus,
+.item-link:hover,
+.item-link:focus {
+  fill: #ffffff;
+  background-color: var(--icon-bg-color);
 }
 
 /* REGULAR CUSTOMERS */
@@ -537,9 +546,7 @@ img {
 .customers-item:not(:last-child) {
   margin-right: 30px;
 }
-.customers-item:nth-child(6n) {
-  margin-right: 0;
-}
+
 .company-link {
   display: flex;
 
@@ -551,18 +558,16 @@ img {
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
-}
-/* .company-link {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.icon {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+  fill: var(--icon-passive-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .company-link:hover,
 .company-icon:hover .icon {
-  --color2: var(--accent--text-color);
+  fill: var(--icon-bg-color);
   border-color: var(--button-bg-color);
 }
 
@@ -598,16 +603,17 @@ img {
   text-transform: uppercase;
 }
 
-.footer-icon .icon {
-  --color2: #ffffff;
-  --color1: rgba(255, 255, 255, 0.1);
+.footer-icon {
+  fill: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
 }
-.footer-icon:hover .icon {
-  --color1: var(--accent--text-color);
+.footer:hover .icon {
+  fill: var(--accent--text-color);
 }
 
 .button .icon {
   text-align: center;
+  fill: #ffffff;
 }
 /* address */
 .address {
