@@ -68,19 +68,29 @@
       <div class="filter container">
         <ul class="filter-list list content-box">
           <li class="filter-item">
-            <button class="filter-btn">Все</button>
+            <label for="all" class="filter-btn">Все</label>
+            <input type="radio" name="filter-btn" id="all" value="all" />
           </li>
           <li class="filter-item">
-            <button class="filter-btn">Веб-сайты</button>
+            <label for="web" class="filter-btn">Веб-сайты</label>
+            <input type="radio" name="filter-btn" id="web" value="web" />
           </li>
           <li class="filter-item">
-            <button class="filter-btn">Приложения</button>
+            <label for="apps" class="filter-btn">Приложения</label>
+            <input type="radio" name="filter-btn" id="apps" value="apps" />
           </li>
           <li class="filter-item">
-            <button class="filter-btn">Дизайн</button>
+            <label for="design" class="filter-btn">Дизайн</label>
+            <input type="radio" name="filter-btn" id="design" value="design" />
           </li>
           <li class="filter-item">
-            <button class="filter-btn">Маркетинг</button>
+            <label for="marketing" class="filter-btn">Маркетинг</label>
+            <input
+              type="radio"
+              name="filter-btn"
+              id="marketing"
+              value="marketing"
+            />
           </li>
         </ul>
       </div>
@@ -323,8 +333,11 @@
         </div>
 
         <div class="footer-content">
-          <h3 class="footer-subtitle">Подпишись на рассылку</h3>
+          <label for="subscription" class="footer-label"
+            >Подпишись на рассылку</label
+          >
           <input
+            type="email"
             class="input-post"
             placeholder="E-mail"
             aria-label="Введите свой E-mail адресс"

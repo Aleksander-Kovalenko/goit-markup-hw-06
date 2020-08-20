@@ -373,13 +373,21 @@ img {
   line-height: 1.2;
 }
 
-.footer-subtitle {
+.footer-subtitle,
+.footer-label {
+  display: block;
+
   margin-top: 0px;
   margin-bottom: 20px;
 
-  font-style: normal;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
   text-transform: uppercase;
 }
+
 /* social-list */
 .social-list {
   margin-top: 16px;
