@@ -197,7 +197,7 @@ img {
 }
 
 .form-field:hover .form-input,
-.form-field:focus .form-input {
+.form-field:hover .form-textarea {
   border: 1px solid #2196f3;
 }
 .form-field:hover .modal-icon {
