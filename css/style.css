@@ -44,6 +44,8 @@ body {
   font-family: Roboto, sans-serif;
   font-size: var(--primary-font-size);
   letter-spacing: var(--primary-letter-spacing);
+
+  background-color: purple;
 }
 img {
   display: block;
@@ -634,6 +636,8 @@ img {
   margin-top: 0px;
   margin-bottom: 20px;
 
+  font-weight: 700;
+  font-size: 14px;
   font-style: normal;
   text-transform: uppercase;
 }
@@ -648,7 +652,7 @@ img {
 }
 
 .button .icon {
-  text-align: center;
+  vertical-align: middle;
   fill: #ffffff;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
