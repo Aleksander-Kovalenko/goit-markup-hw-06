@@ -263,7 +263,13 @@ img {
 
   cursor: pointer;
 
-  border: 1px solid #eeeeee;
+  /* border: 1px solid #eeeeee; */
+}
+.card-subtitle {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .action-link {
