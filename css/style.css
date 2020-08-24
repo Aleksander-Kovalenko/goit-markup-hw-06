@@ -101,6 +101,7 @@ img {
 .btn-close-modal:hover,
 .btn-close-modal:focus {
   fill: var(--button-bg-color);
+  border: 1px solid #2196f3;
 }
 
 /* MODAL CONTAINER */
