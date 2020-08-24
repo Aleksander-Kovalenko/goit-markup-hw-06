@@ -301,9 +301,11 @@ img {
   border: none;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: #fff;
   color: var(--accent--text-color);
+  border: transparent;
 }
 
 /* LIST OF LIMITS */
@@ -367,6 +369,7 @@ img {
 .header-page .link:focus {
   color: var(--accent--text-color);
   fill: var(--accent--text-color);
+  outline: transparent;
 }
 
 .site-nav {
@@ -611,6 +614,7 @@ img {
 .item-link:focus {
   fill: #ffffff;
   background-color: var(--icon-bg-color);
+  border: transparent;
 }
 
 /* REGULAR CUSTOMERS */
